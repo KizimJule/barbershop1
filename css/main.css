@@ -1478,6 +1478,7 @@ img {
 
 .contacts__svg {
   margin-right: 20px;
+  fill: transparent;
 }
 
 .contacts__addres {
