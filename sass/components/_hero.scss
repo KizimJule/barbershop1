@@ -1,0 +1,172 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $hero-bacground-color;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 580px;
+
+  background-image: url(../images/hero/hero-mobi.jpg);
+  background-image: -webkit-image-set(url(../images/hero/hero-mobi.webp) 1x);
+  @include media(retina) {
+    background-image: url(../images/hero/hero-mobi@2x.jpg);
+  }
+  @include media(retina) {
+    background-image: -webkit-image-set(url(../images/hero/hero-mobi@2x.webp) 2x);
+  }
+
+  @include media(tablet) {
+    height: 680px;
+    background-size: 83% 680px, cover;
+    background-position: top right, center;
+    background-color: $hero-bacground-color,
+      linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+
+    background-image: url(../images/hero/hero-tablet.jpg),
+      linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+
+    background-image: -webkit-image-set(url(../images/hero/hero-tablet.webp) 1x),
+      linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+
+    @include media(retina) {
+      background-image: url(../images/hero/hero-tablet@2x.jpg),
+        linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+    }
+    @include media(retina) {
+      background-image: -webkit-image-set(url(../images/hero/hero-tablet@2x.webp) 2x),
+        linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+    }
+  }
+
+  @include media(desk) {
+    background-image: url(../images/hero/hero-desk.jpg),
+      linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+
+    background-image: -webkit-image-set(url(../images/hero/hero-desk.webp) 1x),
+      linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+
+    @include media(retina) {
+      background-image: url(../images/hero/hero-desk@2x.jpg),
+        linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+    }
+    @include media(retina) {
+      background-image: -webkit-image-set(url(../images/hero/hero-desk@2x.webp) 2x),
+        linear-gradient(to right, $main-bacground-color 17%, $hero-bacground-color 17%);
+    }
+  }
+}
+
+.socials-menu__link {
+  color: $main-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.hero_desc {
+  @include media(tablet) {
+    position: absolute;
+    top: 272px;
+    margin-left: 30%;
+  }
+}
+
+.hero__suptitle {
+  color: $hero-suptitle-color;
+
+  &::before {
+    background: $hero-suptitle-color;
+  }
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  color: $main-bacground-color;
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+.hero__text {
+  color: $grey-text-color;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.dash {
+  @include media(mobi-only) {
+    display: none;
+  }
+
+  @include media(tablet) {
+    position: absolute;
+    right: 31px;
+    top: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.dash__item {
+  margin-bottom: 12px;
+  width: 8px;
+  height: 2px;
+  background-color: #9da4bd;
+
+  &:hover,
+  &:focus {
+    background-color: $main-bacground-color;
+    width: 18px;
+  }
+}
+.control {
+  display: none;
+
+  &__item + &__item {
+    margin-left: 61px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+  }
+
+  &--back::after {
+    content: '';
+    position: absolute;
+    background: $hero-suptitle-color;
+    width: 60px;
+    height: 1px;
+    left: 0;
+    bottom: -5px;
+  }
+  &--forward::after {
+    content: '';
+    position: absolute;
+    background: $main-bacground-color;
+    width: 60px;
+    height: 1px;
+    right: 0px;
+    bottom: -5px;
+  }
+
+  @include media(tablet) {
+    position: absolute;
+    bottom: 49px;
+    right: 39px;
+    display: flex;
+  }
+}
+
+.control--back {
+  color: $hero-suptitle-color;
+}
+.control--forward {
+  color: $main-bacground-color;
+}
