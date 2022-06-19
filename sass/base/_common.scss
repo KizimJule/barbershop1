@@ -6,11 +6,21 @@ ul {
   margin: 0;
   padding-left: 0;
 }
-.body {
+body {
+  background-color: $main-bacground-color;
+  color: $main-text-color;
+  font-family: $main-font-family;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -28,6 +38,78 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
+  width: 100%;
+}
+
+.container {
+  padding: 0 31px;
+
+  @include media(mobi) {
+    width: 480px;
+  }
+  @include media(tablet) {
+    width: 768px;
+  }
+  @include media(desk) {
+    width: 1280px;
+  }
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 20px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $main-bacground-color;
+  }
+}
+.button--white {
+  color: $main-bacground-color;
+}
+
+.suptitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    background: $main-text-color;
+    width: 60px;
+    height: 1px;
+  }
+}
+
+.title {
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  @include media(desk) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
 }
