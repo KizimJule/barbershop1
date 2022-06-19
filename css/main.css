@@ -635,4 +635,90 @@ img {
 .control--forward {
   color: #ffffff;
 }
+
+.about-us {
+  padding: 84px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .about-us__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__list {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__pic {
+    width: 330px;
+    height: 235px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__pic {
+    width: 270px;
+    height: 445px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us__item:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__item:first-child {
+    margin-right: 30px;
+  }
+}
+
+.text {
+  color: #555555;
+}
+
+.about-us__text {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.text--smol {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__thumb .button {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
