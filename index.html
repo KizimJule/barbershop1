@@ -207,6 +207,8 @@
               команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
+
+            <button type="button" class="myBtn">Read More</button>
             <button type="button" class="button">онлайн-запись</button>
           </div>
         </div>
@@ -823,18 +825,13 @@
                     name="username"
                     class="form__input"
                     placeholder="Иванов Иван"
+                    autofocus
                   />
                   <span class="form__text">имя*</span>
                 </label>
 
                 <label class="form__field">
-                  <input
-                    type="tel"
-                    name="phone_number"
-                    autofocus
-                    class="form__input"
-                    placeholder="+380"
-                  />
+                  <input type="tel" name="phone_number" class="form__input" placeholder="+380" />
                   <span class="form__text">телефон*</span>
                 </label>
               </div>
@@ -904,5 +901,10 @@
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.elimore.js"></script>
+    <script src="./js/read-more.js"></script>
+    <script src="./js/read-morecopy.js"></script>
   </body>
 </html>

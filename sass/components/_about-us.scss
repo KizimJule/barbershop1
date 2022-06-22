@@ -63,3 +63,25 @@
     margin: 0;
   }
 }
+
+@include media(mobi-only) {
+  .text--smol {
+    height: 80px;
+    overflow: hidden;
+  }
+  .myBtn {
+    display: block;
+    color: red;
+    background-color: white;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .open {
+    height: 150px;
+  }
+}
+@include media(tablet) {
+  .smyBtn {
+    display: none;
+  }
+}
