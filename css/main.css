@@ -21,6 +21,53 @@ body {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+  margin: 0 auto;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  section {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    width: 1200px;
+  }
+}
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .footer {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
 }
 
 ul {

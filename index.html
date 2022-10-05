@@ -36,13 +36,20 @@
 
           <div class="menu-mobile" data-menu>
             <ul class="nav">
-              <li class="nav__item"><a class="nav-link" href="">О нас</a></li>
-              <li class="nav__item"><a class="nav-link" href="">Услуги и цены</a></li>
-              <li class="nav__item"><a class="nav-link" href="">Мастера</a></li>
-              <li class="nav__item"><a class="nav-link" href="">Контакты</a></li>
+              <li class="nav__item"><a class="nav-link" href="#about-us">О нас</a></li>
+              <li class="nav__item"><a class="nav-link" href="#priсes">Услуги и цены</a></li>
+              <li class="nav__item"><a class="nav-link" href="#barbers">Мастера</a></li>
+              <li class="nav__item"><a class="nav-link" href="#contacts">Контакты</a></li>
             </ul>
             <div class="header-contact">
-              <button type="button" class="button button--white">онлайн-запись</button>
+              <button
+                href="#online-form"
+                type="button"
+                class="button button--white"
+                onclick="document.querySelector('.online-form').scrollIntoView()"
+              >
+                онлайн-запись
+              </button>
               <address class="phone">
                 <a class="phone__link" href="tel:+380441111111">+38 044 111 11 11</a>
               </address>
@@ -196,7 +203,7 @@
             </li>
           </ul>
           <div class="about-us__thumb">
-            <p class="suptitle">О НАС</p>
+            <p id="about-us" class="suptitle">О НАС</p>
             <h2 class="title">Лучший Барбершоп твоего города</h2>
             <p class="text about-us__text">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
@@ -209,7 +216,13 @@
             </p>
 
             <button type="button" class="myBtn">Read More</button>
-            <button type="button" class="button">онлайн-запись</button>
+            <button
+              type="button"
+              class="button"
+              onclick="document.querySelector('.online-form').scrollIntoView()"
+            >
+              онлайн-запись
+            </button>
           </div>
         </div>
       </section>
@@ -217,7 +230,7 @@
       <section class="prices">
         <div class="container">
           <p class="suptitle prices__suptitle">Проведи время в компании лучших мастеров</p>
-          <h2 class="title prices__title">Услуги и цены</h2>
+          <h2 id="priсes" class="title prices__title">Услуги и цены</h2>
           <div class="price__container">
             <ul class="price__list price__list--left">
               <li class="price__item">Мужская стрижка <span class="value">от 300 грн.</span></li>
@@ -240,7 +253,13 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="button button--white">онлайн-запись</button>
+          <button
+            type="button"
+            class="button button--white"
+            onclick="document.querySelector('.online-form').scrollIntoView()"
+          >
+            онлайн-запись
+          </button>
         </div>
       </section>
 
@@ -279,7 +298,7 @@
       <section class="our-masters">
         <div class="container">
           <p class="suptitle">для настоящих ценителей атмосферы</p>
-          <h2 class="title our-masters__title">Наши мастера</h2>
+          <h2 id="barbers" class="title our-masters__title">Наши мастера</h2>
 
           <ul class="our-masters__list">
             <li class="our-masters__item">
@@ -816,7 +835,12 @@
       <section class="our-contacts">
         <div class="container">
           <div class="form__container">
-            <h2 class="form__title">Онлайн-запись</h2>
+            <h2
+              class="form__title online-form"
+              onclick="document.querySelector('.online-form').scrollIntoView()"
+            >
+              Онлайн-запись
+            </h2>
             <form class="contact-form" name="contact-form" autocomplete="on">
               <div class="form__wrapper">
                 <label class="form__field">
@@ -825,7 +849,6 @@
                     name="username"
                     class="form__input"
                     placeholder="Иванов Иван"
-                    autofocus
                   />
                   <span class="form__text">имя*</span>
                 </label>
@@ -846,7 +869,7 @@
           </div>
 
           <div class="contacts__container">
-            <h2 class="form__title">Контакты</h2>
+            <h2 id="contacts" class="form__title">Контакты</h2>
             <div class="contacts__thumb">
               <address class="contacts__addres">
                 <p class="contacts__text">
