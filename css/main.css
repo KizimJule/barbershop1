@@ -25,8 +25,7 @@ body {
 }
 
 section {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -41,15 +40,14 @@ section {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   section {
     width: 1200px;
   }
 }
 
 .footer {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -64,7 +62,7 @@ section {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer {
     width: 1200px;
   }
@@ -114,9 +112,9 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 
@@ -173,7 +171,7 @@ img {
   letter-spacing: 0.05em;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .title {
     font-size: 42px;
     line-height: 1.17;
@@ -188,7 +186,7 @@ img {
   z-index: 500;
 }
 
-.headder__container {
+.header__container {
   position: relative;
   z-index: 200;
   display: -webkit-box;
@@ -196,9 +194,8 @@ img {
   display: flex;
   height: 120px;
   padding-top: 32px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .button-mobil {
@@ -281,7 +278,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .nav {
     margin-right: 322px;
   }
@@ -340,7 +337,7 @@ img {
   display: flex;
 }
 
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 1199.98px) {
   .header-contact {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -358,7 +355,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .header-contact {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -370,7 +367,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 1199.98px) {
   .header-contact .button {
     margin-bottom: 20px;
   }
@@ -393,7 +390,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .phone__link {
     margin-right: 40px;
   }
@@ -533,7 +530,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: url(../images/hero/hero-desk.jpg), -webkit-gradient(linear, left top, right top, color-stop(17%, #ffffff), color-stop(17%, rgba(25, 28, 38, 0.2)));
     background-image: url(../images/hero/hero-desk.jpg), linear-gradient(to right, #ffffff 17%, rgba(25, 28, 38, 0.2) 17%);
@@ -542,14 +539,14 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/hero/hero-desk@2x.jpg), -webkit-gradient(linear, left top, right top, color-stop(17%, #ffffff), color-stop(17%, rgba(25, 28, 38, 0.2)));
     background-image: url(../images/hero/hero-desk@2x.jpg), linear-gradient(to right, #ffffff 17%, rgba(25, 28, 38, 0.2) 17%);
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-image-set(url(../images/hero/hero-desk@2x.webp) 2x), -webkit-gradient(linear, left top, right top, color-stop(17%, #ffffff), color-stop(17%, rgba(25, 28, 38, 0.2)));
     background-image: -webkit-image-set(url(../images/hero/hero-desk@2x.webp) 2x), linear-gradient(to right, #ffffff 17%, rgba(25, 28, 38, 0.2) 17%);
@@ -707,7 +704,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about-us__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -723,20 +720,20 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about-us__pic {
     width: 270px;
     height: 445px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .about-us__item:first-child {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about-us__item:first-child {
     margin-right: 30px;
   }
@@ -752,7 +749,7 @@ img {
   line-height: 1.63;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .about-us__text {
     font-size: 18px;
     line-height: 1.67;
@@ -827,20 +824,20 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .prices {
     background-image: url(../images/prices/prices-desk.png);
     background-image: -webkit-image-set(url(../images/prices/prices-desk.webp) 1x);
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .prices {
     background-image: url(../images/prices/prices-desk@2x.png);
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .prices {
     background-image: -webkit-image-set(url(../images/prices/prices-desk@2x.webp) 2x);
   }
@@ -865,7 +862,7 @@ img {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 1199.98px) {
   .price__container {
     padding: 30px 40px;
     background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
@@ -873,7 +870,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .price__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -899,27 +896,27 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .price__list {
     width: 585px;
     padding: 30px 40px;
   }
 }
 
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 1199.98px) {
   .price__list:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .price__list--left {
     background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .price__list--right {
     background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
@@ -962,7 +959,7 @@ img {
   padding: 84px 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .why-we .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1011,7 +1008,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .statistics__list {
     width: 370px;
     margin-left: 0;
@@ -1032,7 +1029,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .statistics__item {
     width: 170px;
   }
@@ -1074,7 +1071,7 @@ img {
   background-color: #f7f7f7;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .our-masters {
     text-align: center;
   }
@@ -1091,7 +1088,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 1199.98px) {
   .our-masters__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1106,13 +1103,13 @@ img {
   margin-bottom: 44px;
 }
 
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 1199.98px) {
   .our-masters__item + .our-masters__item {
     margin-top: 64px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .our-masters__item + .our-masters__item {
     margin-left: 30px;
   }
@@ -1195,7 +1192,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .portfolio__img {
     width: 270px;
   }
@@ -1218,7 +1215,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .portfolio__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1229,7 +1226,7 @@ img {
   padding: 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .our-contacts > .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1242,7 +1239,7 @@ img {
   background-color: #191c26;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .form__container {
     padding: 84px 40px 84px 51px;
   }
@@ -1353,7 +1350,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .form__input {
     width: 270px;
   }
@@ -1465,7 +1462,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts__container {
     padding-left: 100px;
     height: 644px;
@@ -1474,13 +1471,13 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .contacts__container {
     background-image: url(../images/contacts_down/contacts-desk@2x.png);
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .contacts__container {
     background-image: -webkit-image-set(url(../images/contacts_down/contacts-desk@2x.webp) 2x);
   }
@@ -1497,7 +1494,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts__thumb {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
