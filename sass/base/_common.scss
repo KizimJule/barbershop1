@@ -20,45 +20,45 @@ body {
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 section {
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 .footer {
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -94,13 +94,13 @@ img {
   padding: 0 31px;
 
   @include media(mobi) {
-    width: 480px;
+    max-width: 480px;
   }
   @include media(tablet) {
-    width: 768px;
+    max-width: 768px;
   }
   @include media(desk) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 

@@ -30,19 +30,19 @@ body {
 
 @media screen and (min-width: 480px) {
   .header__section {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header__section {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__section {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -52,19 +52,19 @@ section {
 
 @media screen and (min-width: 480px) {
   section {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   section {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   section {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -74,19 +74,19 @@ section {
 
 @media screen and (min-width: 480px) {
   .footer {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -124,19 +124,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -261,7 +261,6 @@ img {
   .menu-mobile {
     position: fixed;
     top: 0;
-    right: 0;
     background-color: #ffffff;
     min-width: 337px;
     height: 100vh;
@@ -1216,7 +1215,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfolio__img {
-    width: 270px;
+    width: 260px;
   }
 }
 
@@ -1233,7 +1232,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    gap: 28px;
   }
 }
 

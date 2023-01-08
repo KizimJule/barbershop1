@@ -13,7 +13,7 @@
     width: 330px;
   }
   @include media(desk) {
-    width: 270px;
+    width: 260px;
   }
 }
 .portfolio__item + .portfolio__item {
@@ -26,7 +26,7 @@
   @include media(tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 28px;
   }
   @include media(desk) {
     flex-wrap: nowrap;
